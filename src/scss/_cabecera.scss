@@ -1,0 +1,60 @@
+.banner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $void;
+    
+    &-img {
+        // min-width: 100%;
+        // height: 60vh;
+
+        &__usuario {
+            width: 100px;
+            height: 100px;
+            align-self: flex-end;
+            margin-bottom: -50px;
+            border: 1px solid $void;
+            border-radius: 100%;
+        }
+    }
+
+    &-group {
+        position: absolute;
+        width: 70%;
+        padding: 2% 5%;
+        border: 1px solid $stark;
+        font-size: 16px;
+    }
+
+    &-title {
+        text-align: center;
+        font-size: 2rem;
+        color: $stark;
+        text-transform: capitalize;
+        
+    }
+
+    &-subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+        color: $stark;
+        text-transform: capitalize;
+    }
+}
+
+@media screen and(min-width: 765px) {
+    .banner-group {
+        width: 50%;
+    }
+    .banner-img__usuario {
+        bottom: 230px;
+    }
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    .banner-subtitle {
+        font-size: 2rem;
+    }
+}

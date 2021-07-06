@@ -1,0 +1,21 @@
+$void: #0E0B16;
+$fuschia: #A239CA;
+$jewel: #4717f6;
+$stark: #E7DFDD;
+$gris:#5a5a5a;
+
+
+@import './reset';
+@import './menu';
+@import './cabecera';
+@import './main';
+@import './acercaDe';
+@import './trabajos';
+@import './contacto';
+@import './footer';
+@import './listas';
+
+body {
+    color: $gris;
+    // background: $void;
+}

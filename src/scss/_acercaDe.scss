@@ -1,0 +1,28 @@
+.cercaDe {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+.texto {
+    color: $gris;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 70px auto 80px auto;
+    
+}
+
+.title {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: $jewel;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}

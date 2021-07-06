@@ -1,0 +1,53 @@
+.container-list {
+    width: 100%;
+    padding: 48px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, fit-content);
+}
+
+.list {
+
+    &-group {
+        width: 100%;
+        padding: 0 15px;
+        grid-column: span 12;
+    }
+    &-title {
+        text-transform: capitalize;
+        color: $jewel;
+    }
+    &-item {
+        font-size: 1.1em;
+        width: 120px;
+    }
+}
+.link-item {
+    color: $stark;
+}
+
+.link-item:hover {
+    color: $gris;
+    text-decoration: underline;
+}
+
+.copy {
+    width: 100%;
+    grid-column: span 12;
+
+    &-text {
+        text-align: center;
+        font-weight: lighter;
+    }
+}
+
+@media(min-width:600px)
+{
+    .container-list {
+        grid-template-rows: repeat(2, fit-content);
+    }
+    .list-group {
+        grid-column: span 3;
+    }
+}

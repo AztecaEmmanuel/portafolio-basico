@@ -1,0 +1,72 @@
+.contacto {
+    width: 100%;
+    padding: 70px 0 80px 0;
+}
+
+.conteiner-form {
+    width: 100%;
+
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+
+}
+
+.input {
+    background: $stark;
+    grid-column: span 12;
+
+    width: 80%;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+
+    font-size: 1.1em;
+    text-indent: 20px;
+
+}
+
+.button {
+    background: $stark;
+    grid-column: span 12;
+    width: 25%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    justify-self: start;
+    margin: 0 0 20px 10%;
+}
+
+@media(min-width:1000px)
+{
+    .input {
+        grid-column: 4/10;
+        
+    }
+    
+    .button {
+        grid-column: 4/10;
+    }
+}
+
+@media(min-width:768px) and (max-width: 999px) 
+{
+
+    .input {
+        grid-column: 3/11;
+        
+    }
+    
+    .button {
+        grid-column: 3/11;
+    }
+}
+
+// @media(min-width:485px) and (max-width: 767px) 
+// {
+//     .card-group {
+//         grid-column: span 6;
+//     }
+// }
