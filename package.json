@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://aztecaemmanuel.github.io/portafolio-basico/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
